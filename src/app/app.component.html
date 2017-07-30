@@ -1,3 +1,10 @@
 <h1>
   {{title}}
 </h1>
+<div *ngFor="let img of list">
+  <img src="{{img.image}}">
+</div>
+
+<input type="file"  [(ngModel)]="fileddd">
+
+<button (click)="uploadImage()">upload</button>
